@@ -29,25 +29,32 @@ body {
 }
 
 #input-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   margin-top: 1rem;
 }
+
+
 input {
+  flex: 1 1 100%;
   background-color: #000;
   color: #00ff99;
   border: 1px solid #00ff99;
   font-family: 'Courier New', monospace;
   font-size: 1rem;
   padding: 0.5rem;
-  width: 60%;
-  margin-right: 0.5rem;
+  box-sizing: border-box;
 }
+
+
 input:disabled,
 button:disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }
-
 button {
+  flex: 1 1 100%;
   background-color: #111;
   color: #00ff99;
   border: 1px solid #00ff99;
@@ -56,7 +63,9 @@ button {
   font-size: 1rem;
   margin-top: 1rem;
   cursor: pointer;
+  box-sizing: border-box;
 }
+
 button:hover {
   background-color: #00ff99;
   color: #000;
@@ -204,9 +213,14 @@ body.theme-red .log-entry {
   #module-controls button {
     width: 100%;
   }
-  
+
   #terminal {
   box-shadow: none;
 }
+
+input {
+  width: 100%;
+}
+
 
 }
