@@ -168,3 +168,45 @@ body.theme-red #terminal {
 body.theme-red .log-entry {
   color: #ff4444;
 }
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  #terminal {
+    font-size: 14px;
+    padding: 0.75rem;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  #input-area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #theme-controls,
+  #module-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #theme-controls button,
+  #module-controls button {
+    width: 100%;
+  }
+  
+  #terminal {
+  box-shadow: none;
+}
+
+}
