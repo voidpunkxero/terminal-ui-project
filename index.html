@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voidpunk Terminal Interface</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="terminal">
+    <p class="log-entry">[BOOT] System initialized...</p>
+    <p class="log-entry">[INFO] Input received...</p>
+    <p class="log-entry">[READY] Enter command:</p>
+  </div>
+
+<div id="alert-panel" class="hidden">
+    <div class="alert-content">
+      <span class="blinking-warning">[!]</span>
+      <span class="alert-text">[ALERT] Terminal security lockdown engaged.</span>
+    </div>
+    <button id="clear-alert">CLEAR ALERT</button>
+  </div>
+
+  <div id="input-area">
+    <input id="command-input" type="text" placeholder="Enter command..." />
+    <button id="run-button">RUN</button>
+  </div>
+
+  <div id="theme-controls">
+    <button data-theme="green">CRT Green</button>
+    <button data-theme="amber">Amber</button>
+    <button data-theme="red">Blood Red</button>
+  </div>
+
+  <div id="module-controls">
+    <button id="toggle-security">Toggle Security Feed</button>
+    <button id="toggle-monitor">Toggle System Monitor</button>
+  </div>
+
+  <div id="modules">
+    <div id="security-feed" class="module hidden">[FEED] Security cam offline</div>
+    <div id="system-monitor" class="module hidden">[MON] CPU Load: 12%</div>
+  </div>
+
+  <button id="power-toggle">TOGGLE POWER MODE</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
